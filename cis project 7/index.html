@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Geri Mato</title>
+<meta charset="UTF-8">
+<!-- linking style sheet-->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- using the marquee tag to add a scrolling text area-->
+<marquee>Today's Date <span id="date"></span>.</marquee>
+
+<!-- Adding audio to the page with controls -->
+<audio controls>
+  <source src="soundclip.mp3" type="audio/mp3">
+</audio><br><br>
+
+<!-- Adding video to the page with controls -->
+<video width="620" height="440" controls>
+  <source src="broadway.mp4" type="video/mp4">
+  <track src="english.vtt" kind="subtitles" srclang="en" label="English">
+<!-- adding track text to video -->
+  <track src="eng.vtt" kind="subtitles" srclang="no">
+</video><br><br>
+
+<!-- adding img to the page -->
+<img src="show.png" alt="img">
+
+<!-- wrapping the text to image -->
+<h1><i>Join us this afternoon in our theater for the show</i></h1>
+
+
+<!-- making boxed text for the page -->
+<div class="boxed"><br><br>
+  <h1><i>GET YOUR TICKET NOW !!!</i></h1>
+</div>
+
+</body>
+<!-- JS to add the date to marquee -->
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+
+</html>
